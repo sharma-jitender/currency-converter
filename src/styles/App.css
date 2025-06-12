@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://i.pinimg.com/736x/49/16/ca/4916cae45bb892cb3c913e6ec46cddc2.jpg'); /* Replace with your URL */
+  background-size: cover; /* Scales the image to cover the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.app {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Optional: Adds a semi-transparent white overlay for readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Rest of your existing CSS remains unchanged */
+.converter {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field, .select-currency {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #3498db;
+}
+
+input[readOnly] {
+  background: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.swap-button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.swap-button:hover {
+  background: #2980b9;
+}
+
+.error {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.rate-info {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+.news-section {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+}
+
+.news-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.news-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-section li {
+  margin: 5px 0;
+}
+
+.news-section a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.news-section a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media (min-width: 600px) {
+  .input-group {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .input-field, .select-currency {
+    flex: 1;
+  }
+}
